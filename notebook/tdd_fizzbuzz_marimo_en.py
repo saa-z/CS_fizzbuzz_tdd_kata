@@ -5,6 +5,7 @@
 # ]
 # ///
 
+# exploratory / teaching notebook : construction fizzbuzz
 import marimo
 
 __generated_with = "0.24.2"
@@ -34,7 +35,6 @@ def _():
        uv run pytest tdd_fizzbuzz_marimo_en.py
        ```
     """)
-    return
 
 
 @app.cell
@@ -50,7 +50,6 @@ def _():
     We then write the **minimal** code that makes this test pass:
     simply return `str(n)`.
     """)
-    return
 
 
 @app.function
@@ -62,7 +61,6 @@ def fizzbuzz_v1(n):
 def test_v1_returns_number_as_string():
     assert fizzbuzz_v1(1) == "1"
     assert fizzbuzz_v1(2) == "2"
-    return
 
 
 @app.cell
@@ -75,7 +73,6 @@ def _():
     change the implementation to make it pass (Green), **without
     breaking the previous test** (regression).
     """)
-    return
 
 
 @app.function
@@ -89,7 +86,6 @@ def fizzbuzz_v2(n):
 def test_v2_multiples_of_three_return_fizz():
     assert fizzbuzz_v2(3) == "Fizz"
     assert fizzbuzz_v2(6) == "Fizz"
-    return
 
 
 @app.cell
@@ -97,7 +93,6 @@ def test_v2_non_multiples_still_return_number():
     # Regression test inherited from step 1
     assert fizzbuzz_v2(1) == "1"
     assert fizzbuzz_v2(2) == "2"
-    return
 
 
 @app.cell
@@ -108,7 +103,6 @@ def _():
     Same approach: a new test describes the expected behavior for
     multiples of 5, then we adapt the implementation.
     """)
-    return
 
 
 @app.function
@@ -124,13 +118,11 @@ def fizzbuzz_v3(n):
 def test_v3_multiples_of_five_return_buzz():
     assert fizzbuzz_v3(5) == "Buzz"
     assert fizzbuzz_v3(10) == "Buzz"
-    return
 
 
 @app.cell
 def test_v3_multiples_of_three_still_return_fizz():
     assert fizzbuzz_v3(3) == "Fizz"
-    return
 
 
 @app.cell
@@ -146,7 +138,6 @@ def _():
     This test therefore fails first (**Red**), which forces us to
     revisit the order of conditions or the logic (**Green**).
     """)
-    return
 
 
 @app.function
@@ -164,7 +155,6 @@ def fizzbuzz_v4(n):
 def test_v4_multiples_of_fifteen_return_fizzbuzz():
     assert fizzbuzz_v4(15) == "FizzBuzz"
     assert fizzbuzz_v4(30) == "FizzBuzz"
-    return
 
 
 @app.cell
@@ -172,7 +162,6 @@ def test_v4_all_previous_rules_still_hold():
     assert fizzbuzz_v4(1) == "1"
     assert fizzbuzz_v4(3) == "Fizz"
     assert fizzbuzz_v4(5) == "Buzz"
-    return
 
 
 @app.cell
@@ -189,7 +178,6 @@ def _():
     This is the version we'd consider the final contract of the
     function in production code.
     """)
-    return
 
 
 @app.function
@@ -224,7 +212,6 @@ def _():
     single parametrized test — more readable and easier to extend
     than separate tests.
     """)
-    return
 
 
 @app.function
@@ -252,7 +239,6 @@ def test_fizzbuzz_rejects_invalid_input():
         fizzbuzz(0)
     with pytest.raises(ValueError):
         fizzbuzz(-5)
-    return
 
 
 @app.cell
@@ -263,13 +249,11 @@ def _():
     Use the field below to call `fizzbuzz` on an integer of your
     choice and see the result live — handy for a classroom demo.
     """)
-    return
 
 
 @app.cell
 def _():
     n_input = mo.ui.number(start=1, stop=1000, step=1, value=15, label="n")
-    n_input
     return (n_input,)
 
 
@@ -280,8 +264,7 @@ def _(n_input):
         output = mo.md(f"`fizzbuzz({n_input.value})` → **{result}**")
     except ValueError as e:
         output = mo.md(f"⚠️ Error: {e}")
-    output
-    return
+    return(output)
 
 
 if __name__ == "__main__":
