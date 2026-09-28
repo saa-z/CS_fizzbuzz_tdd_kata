@@ -1,5 +1,5 @@
 [project]
-name = "fizzbuzz-tdd-kata"
+name = "CS_fizzbuzz_tdd_kata"
 version = "0.1.0"
 description = "A TDD kata: FizzBuzz, from notebook exploration to a tested, published package"
 readme = "README.md"
@@ -10,8 +10,8 @@ authors = [
 requires-python = ">=3.11"
 dependencies = []
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/fizzbuzz_tdd_kata"]
+[tool.uv.build-backend]
+module-name = "fizzbuzz_tdd_kata"
 
 [project.scripts]
 fizzbuzz-tdd-kata = "fizzbuzz_tdd_kata:main"
