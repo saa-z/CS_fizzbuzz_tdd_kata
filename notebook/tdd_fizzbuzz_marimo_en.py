@@ -264,7 +264,7 @@ def _(n_input):
         output = mo.md(f"`fizzbuzz({n_input.value})` → **{result}**")
     except ValueError as e:
         output = mo.md(f"⚠️ Error: {e}")
-    return(output)
+    return output
 
 
 if __name__ == "__main__":

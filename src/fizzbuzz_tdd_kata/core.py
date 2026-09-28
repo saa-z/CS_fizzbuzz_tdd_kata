@@ -1,5 +1,6 @@
 # production code of fizzbuzz function
 
+
 def fizzbuzz(n: int) -> str:
     """Return the FizzBuzz representation of the integer n.
 
