@@ -8,7 +8,14 @@
     {
       "id": "setup",
       "code_hash": "6f40f30abab5849aaf986862372ee9b3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -40,13 +47,27 @@
     {
       "id": "vblA",
       "code_hash": "58f06fa7729ca2cd6c7d469257f1ea54",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "bkHC",
       "code_hash": "00d808e36c6a1b8a9875884f456a232c",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -65,19 +86,40 @@
     {
       "id": "PKri",
       "code_hash": "1db5755f370150a1dc2a8c79a92b3192",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "Xref",
       "code_hash": "60a7533f774b9470f1f8bf4711a828f3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "SFPL",
       "code_hash": "7131c071f9ab3f36aaca4485c698aec4",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -158,7 +200,14 @@
     {
       "id": "qnkX",
       "code_hash": "323adaad99b7e1bbfbe3cf5c68cae1e3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -183,7 +232,14 @@
     {
       "id": "DnEU",
       "code_hash": "499e06ae4a66087c9ce74a27f4aa891b",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -202,13 +258,27 @@
     {
       "id": "ecfG",
       "code_hash": "1d2a1e611f864977356c7b1b2a077849",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ecfG-0' random-id='92093ed2-551c-4fcc-5bbb-8afe8eab4807'><marimo-number data-initial-value='15' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003en&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='1' data-stop='1000' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "Pvdt",
       "code_hash": "c299c58df1daa523944b1d9841046b35",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>fizzbuzz(3)</code> \u2192 <strong>Fizz</strong></span></span>"
+          }
+        }
+      ],
       "console": []
     }
   ]
