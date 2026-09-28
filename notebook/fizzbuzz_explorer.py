@@ -4,9 +4,10 @@ __generated_with = "0.24.2"
 app = marimo.App(width="medium")
 
 with app.setup:
+    from collections import Counter
+
     import marimo as mo
     import matplotlib.pyplot as plt
-    from collections import Counter
 
     from fizzbuzz_tdd_kata import fizzbuzz
 
@@ -16,7 +17,8 @@ def _():
     mo.md(r"""
     # FizzBuzz Explorer
 
-    Pick a range below and see how fizzbuzz classifies each number         in it, both as a list and as a chart of the distribution of
+    Pick a range below and see how fizzbuzz classifies each number
+    in it, both as a list and as a chart of the distribution of
     outputs. This notebook consumes the published fizzbuzz_kata
     package — it does not reimplement the function.
     """)
@@ -36,7 +38,7 @@ def _(end, start):
     lo, hi = sorted((start.value, end.value))
     results = [fizzbuzz(n) for n in range(lo, hi + 1)]
     results
-    return
+    return (results,)
 
 
 @app.cell
@@ -52,6 +54,7 @@ def _(results):
     ax.set_title("Distribution of FizzBuzz outputs over the selected range")
     fig
     return
+
 
 if __name__ == "__main__":
     app.run()
